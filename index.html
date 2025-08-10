@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head Section -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="container">
+        <!-- Income Container -->
+        <div id="incomeContainer">
+            <form class="income-form"><h3>INCOME</h3>
+                <div class="validate-income">
+                    <label for="description">Description:</label>
+                    <input id="income-description" name="description" type="text" placeholder="Paycheck">
+                    <label for="amount">Amount:</label>
+                    <input id="income-amount" name="amount" type="text" placeholder="525">
+                </div>
+                <button type="submit" id="incomeSubmit">Add Income</button>
+            </form>
+        </div>
+        <!-- Expense Container -->
+        <div id="expenseContainer">
+            <form class="expense-form"><h3>EXPENSE</h3>
+                <div class="validate-expense">
+                    <label for="description">Description:</label>
+                    <input id="expense-description" name= "description" type="text" placeholder="Groceries">
+                    <label for="amount">Amount:</label>
+                    <input id="expense-amount" name= "amount" type="text" placeholder="200">
+                </div>
+                <button type="submit" id="expenseSubmit">Add Expense</button> 
+            </form>
+        </div>
+        <!-- Summary Container -->
+        <div id="summaryContainer">
+            <h3>SUMMARY</h3>
+            <div><h4 id="myBalance">Total Balance:</h4></div>
+            <div><h4 id="myIncome">Total Income:</h4></div>
+            <div><h4 id="myExpense">Total Expense:</h4></div>
+        </div>
+    </section>
+
+    <!-- Link to JavaScript --> 
+    <script src="script.js"></script>
+</body>
+
+</html>

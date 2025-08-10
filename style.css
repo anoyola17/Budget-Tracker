@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to right, SkyBlue, LightSkyBlue, LightCyan);
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 5em;
+}
+
+section {
+  background-color: rgb(215, 227, 244);
+  border-radius: 40px;
+  width: 75em;
+  height: 50rem;
+  margin: auto;
+}
+
+div {
+  background-color: #f2f2f2;
+  margin-top: 2em;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px 2px;
+  margin: 9px 0;
+  display: inline-block;
+  border: 1px #ccc;
+  border-style: solid;
+  border-radius: 4px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#incomeContainer, #expenseContainer, #summaryContainer {
+  background-color: aliceblue;
+  border: 2px rgb(79, 185, 227);
+  border-style: solid;
+  border-radius: 40px;
+  margin-top: 3em;
+  margin: auto;
+  margin-left: 2em;
+  margin-right: 2em;
+  width: 28em;
+  height: 20em;
+  padding: 2em;
+}
+
+#summaryContainer {
+  width: 65em;
+  height: 15em;
+  display: flex;
+  align-items: flex-start;
+  gap: 5.5em;
+}
+
+button {
+  background-color: DodgerBlue;
+  border-radius: 40px;
+  border-style: solid;
+  margin-top: 2em;
+  border-color: black;
+  color: azure;
+  text-align: center;
+  width: 15em;
+  height: 3em;
+  margin-left: 6em;
+  cursor: pointer;
+  font-size: medium;
+}/*# sourceMappingURL=style.css.map */

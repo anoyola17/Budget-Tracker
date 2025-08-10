@@ -1,0 +1,92 @@
+$color: (first: aliceblue, second: DodgerBlue, third: rgb(79, 185, 227), fourth: #f2f2f2, fifth: rgb(215, 227, 244));
+$input-deauflt: (color1: ForestGreen, color2: FireBrick);
+$border-deault: 40px;
+$style-deault: solid;
+$margin-deault: 2em;
+@mixin gradient($background1, $background2, $background3) {
+  background: linear-gradient(to right, $background1, $background2, $background3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    @include gradient(SkyBlue, LightSkyBlue, LightCyan);
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 5em;
+}
+
+section{
+    background-color: map-get($color, fifth);
+    border-radius: $border-deault;
+    width: 75em;
+    height: 50rem;
+    margin: auto;
+}
+
+div {
+    background-color: map-get($color, fourth);
+    margin-top: $margin-deault;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+input{
+    width: 100%;
+    padding: 10px 2px;
+    margin: 9px 0;
+    display: inline-block;
+    border: 1px #ccc;
+    border-style: $style-deault;
+    border-radius: 4px;
+}
+
+.container{
+    display: flex;
+    flex: {
+        wrap: wrap;
+    }
+    justify-content: center;
+}
+
+#incomeContainer, #expenseContainer, #summaryContainer{
+    background-color: map-get($color, first);
+    border: 2px map-get($color, third);
+    border-style: $style-deault;
+    border-radius: $border-deault;
+    margin-top: 3em;
+    margin: auto;
+    margin-left: 2em;
+    margin-right: 2em;
+    width: 28em;
+    height: 20em;
+    padding: 2em;
+}
+
+#summaryContainer{
+    width: 65em;
+    height: 15em;
+    display: flex;
+    align-items: flex-start;
+    gap: 5.5em;
+}
+
+
+
+button{
+    background-color: map-get($color, second);
+    border-radius: $border-deault;
+    border-style: $style-deault;
+    margin-top: $margin-deault;
+    border-color: black;
+    color: azure;
+    text-align: center;
+    width: 15em;
+    height: 3em;
+    margin-left: 6em;
+    cursor: pointer;
+    font-size: medium;
+}
